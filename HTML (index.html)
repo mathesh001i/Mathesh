@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Catalog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="filters">
+      <h3>Filters</h3>
+      <label>Category:
+        <select id="categoryFilter">
+          <option value="all">All</option>
+          <option value="electronics">Electronics</option>
+          <option value="fashion">Fashion</option>
+        </select>
+      </label>
+
+      <label>Price Range:
+        <input type="range" id="priceRange" min="0" max="1000" step="50" />
+        <span id="priceValue">$0 - $1000</span>
+      </label>
+    </aside>
+
+    <main class="product-list" id="productList"></main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
